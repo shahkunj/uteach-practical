@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Restaurent Name</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/fav-icon.png" rel="icon">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+	 .custom-section {
+      background-color: #fff;
+      border-radius: 20px;
+      /* padding: 40px; */
+      /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    }
+    .orange-shape {
+      background-image: url('/images/Blob1.png');
+	  background-repeat: no-repeat;
+      border-radius: 30px;
+      position: relative;
+      padding: 30px;
+    }
+    .image-grid img {
+      border-radius: 10px;
+    }
+    .circle-image {
+      position: absolute;
+      top: -40px;
+      right: -20px;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 80px;
+      height: 80px;
+      border: 4px solid white;
+    }
+    .circle-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .background-stars {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      z-index: -1;
+      background-image: url('path_to_stars_image');
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+    }
+	@media (max-width: 320px) {
+  .ptb-200 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+
+        .contact-section .form-control {
+            background-color: #fff;
+            border: none;
+        }
+
+        .contact-section .btn {
+            background-color: #fff;
+            color: #FF9400 !important;
+            font-weight: bold;
+        }
+
+        .contact-section .btn:hover {
+            background-color: #FFD580;
+            color: #fff;
+        }
+
+        .map-container {
+            background-color: #f7f7f7;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.navbar-fixed {
+  position: fixed;
+  background: #fff;
+  z-index: 100;
+  padding: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  box-shadow: 0px 7px 20px 0px #adadad4a;
+}
+
+.slider-item-img {
+  text-align: center;
+}
+
+.watch.justify-content-center {
+  margin: 0;
+}
+
+
+/* toggle menu end  */
+
+.search-form {
+  display: none;
+}
+
+.second-home-nav {
+  background: #fff;
+  padding: 0 25px;
+}
+
+.header.navbar-fixed .second-home-nav {
+  background: #fff;
+  box-shadow: 0px 7px 20px 0px #adadad4a;
+}
+
+.right-menu-icon {
+  margin-left: 50px;
+  display:none;
+}
+
+.icon-item {
+  padding: 20px 7px;
+  position: relative;
+}
+
+.cart-count {
+  border: 1px solid #ddd;
+  padding: 0;
+  min-width: 15px;
+  height: 15px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 10px;
+  top: -10px;
+  right: -8px;
+}
+
+.cart-menu {
+  position: absolute;
+  background: #ffffff;
+  backdrop-filter: blur(5px);
+  right: 0;
+  padding: 10px;
+  width: 275px;
+  box-shadow: 0px 11px 20px 1px #54545445;
+  margin-top: 100px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  padding-bottom: 20px;
+}
+
+.nav-list {
+  position: relative;
+}
+
+.cart-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.cart-img img {
+  width: 50px;
+}
+
+.remove-icon {
+  color: #292929;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.remove-icon:hover {
+  color: #cc3333;
+}
+.header-2 .remove-icon:hover {
+  color: #79a1bb;
+}
+.header-2.theme-3 .remove-icon:hover {
+  color: #FBB217;
+}
+.cart-px-name {
+  font-size: 14px !important;
+}
+
+.nav-list:hover .cart-menu {
+  opacity: 1;
+  margin-top: 0;
+  visibility: visible;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="sb-preloader">
+      	<div class="sb-preloader-bg"></div>
+      	<div class="sb-preloader-body">
+        	<div class="sb-loading">
+          		<div class="sb-percent"><span class="sb-preloader-number" data-count="101">00</span><span>%</span></div>
+        	</div>
+        	<div class="sb-loading-bar">
+          		<div class="sb-bar"></div>
+        	</div>
+      	</div>
+    </div>
+
+	<header class="header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-2 col-lg-2 col-md-2 col-12">
+					<div class="header-logo">
+						<a href="index.html"><img src="images/Logo-colored.png" alt="Brand Logo"></a>
+					</div>
+				</div>
+				<div class="col-xl-7 col-lg-7 col-md-7 col-12">
+					
+					<div class="main-menu align-items-center">
+						<div class="sidemenu-overlay"></div>
+						<div class="menu">
+							<div class="sidemenu-header">
+								<div class="sidemenu-logo">
+									<img src="images/Logo-colored.png" alt="Brand Logo">
+								</div>
+								<div class="sidemenu-close">
+									<span></span>
+								</div>
+							</div>
+							<ul>
+								<li class="active"><a href="index.html">Products</a></li>
+								<li><a href="index.html">Solutions</a></li>
+								<li><a href="index.html">Pricing</a></li>
+								<li class="has-child-iteam"><a href="#">Resources</a>
+									<ul>
+										<li><a href="#">Resource 1</a></li>
+										<li><a href="#">Resource 2</a></li>
+										
+									</ul>
+								</li>
+								
+							</ul>
+							<div class="header-logo d-flex justify-content-evenly align-items-center d-lg-none d-md-block">
+								<a href="menu.html" class="wow fadeInLeft px-3">Login</a>
+									<a href="menu.html" class="button1 wow fadeInLeft">Sign Up Now</a>
+							</div>
+						</div>
+						
+						<div class="toggle-menu"><span></span></div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-12">
+					<div class="header-logo d-flex justify-content-evenly align-items-center d-lg-block d-none">
+						<a href="menu.html" class="wow fadeInLeft px-3">Login</a>
+							<a href="menu.html" class="button1 wow fadeInLeft">Sign Up Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+	</header>
+	 
+	<main id="main" class="main">
+
+		<section class="home-banner overflow-hidden">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<div class="banner-content">
+							<h1 class="banner-title text-uppercase wow fadeInLeft">Teach students worldwide</h1>
+							<div class="banner-des wow fadeInLeft">
+								<p>
+									Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
+								</p>
+							</div>
+							<a href="menu.html" class="button wow fadeInLeft">Sign Up Now</a>
+							<a href="#" class="text-primary text-decoration-none px-3">  <img src="/images/play-circle.png" alt="" class="px-2"> View Demo</a>
+						</div>
+						<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 pt-5">
+							<div class="row">
+							<div class="col-xl-4 col-lg-4 col-md-12">
+								<p>
+									Trusted by leading companies
+								</p>
+							</div>
+							<div class="col-xl-8 col-lg-8 col-md-12">
+								<div class="row text-center">
+								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="./images/Black and White Collection 1.png" alt=""></div>
+								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="./images/Black and White Collection 2.png" alt=""></div>
+								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="./images/Black and White Collection 3.png" alt=""></div>
+								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="./images/Black and White Collection 11.png" alt=""></div>
+								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="./images/Black and White Collection 20.png" alt=""></div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<div class="banner-img">
+							<img src="images/Group 50.png" alt="Banner Image" class="wow rotate-img">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<section class="about overflow-hidden ptb-100 bg-skyb">
+			<div class="container">
+				<div class="about-inner11">
+					<div class="col-xl-8 col-lg-8 col-md-12 mx-auto">
+						<div class="section-headding text-center">
+							<h2 class="wow fadeInUp animated pb-30" style="visibility: visible;">All the <span class="highlighted-text"> tools </span> that you need</h2>
+							<p class="pb-30">
+								Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
+Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 order-t-2">
+							<div class="about-img-part wow fadeInLeft animated text-center" style="visibility: visible;">
+								
+								<div class="about-left-img">
+									<img src="images/b.png" alt="About Image">
+								</div>
+								<div class="about-ring">
+									<img src="images/Blob Group-1.png" alt="About Image">
+								</div>
+								<div class="about-ring1">
+									<img src="images/Blob Group.png" alt="About Image">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="top-recipes bg-grey ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8 col-lg-8 col-md-12 mx-auto">
+						<div class="section-headding text-center pb-50">
+							<h2 class="wow fadeInUp animated" style="visibility: visible;">All the <span class="highlighted-text"> tools </span> that you need</h2>
+							<p>
+								Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
+Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
+							</p>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="row">
+					<div class="col-xl-10 col-lg-10 col-md-12 wow fadeInUp animated mx-auto" style="visibility: visible;">
+						<div class="">
+							<img src="./images/b.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<section class="faq overflow-hidden ptb-100">
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-xl-5 col-lg-5 col-md-12 wow fadeInLeft animated" style="visibility: visible;">
+						<div class="row">
+							<div class="col-xl-12 col-lg-12 col-md-12">
+								<div class="section-headding pb-50">
+									
+									<h2 class="wow fadeInUp animated" style="visibility: visible;">An <span class="highlighted-text">all-in-one</span> app that makes it easier</h2>
+								</div>
+							</div>
+						</div>
+						<div class="faq-content">
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+								    <h2 class="accordion-header" id="headingOne">
+								      	<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								        What is the location of the restaurant?
+								      	</button>
+								    </h2>
+								    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								      	<div class="accordion-body">
+								        	<p>Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. </p>
+								      	</div>
+								    </div>
+								</div>
+								<div class="accordion-item">
+								    <h2 class="accordion-header" id="headingTwo">
+								      	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								        How to book a table in a restaurant?
+								      	</button>
+								    </h2>
+								    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								      	<div class="accordion-body">
+								        	<p>Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. </p>
+								      	</div>
+								    </div>
+								</div>
+								<div class="accordion-item">
+								    <h2 class="accordion-header" id="headingThree">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								        Varius ultricies molestie tellus fermentum, viverra ipsum scelerisque etiam lorem?
+								      </button>
+								    </h2>
+								    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								      <div class="accordion-body">
+								        <p>Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. </p>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="accordion-item">
+								    <h2 class="accordion-header" id="headingFour">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								        Varius ultricies molestie tellus fermentum, viverra ipsum scelerisque etiam lorem?
+								      </button>
+								    </h2>
+								    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+								      <div class="accordion-body">
+								        <p>Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. </p>
+								      </div>
+								    </div>
+								  </div>
+								  <a href="#" class="text-primary text-decoration-none">Find more about the app &#x2794;</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-1 col-lg-1 col-md-1"></div>
+					<div class="col-xl-6 col-lg-6 col-md-12 wow fadeInRight animated " style="visibility: visible;">
+						<div class="about-img-part wow fadeInLeft">
+							<!-- <div class="about-right-img">
+								<img src="images/about-img.jpg" alt="About Image">
+							</div> -->
+							<div class="about-left-img">
+								<img src="images/Desktop.png" alt="About Image" class="img-fluid">
+							</div>
+							<div class="about-ring">
+								<img src="images/Blob.png" alt="About Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="container bg-body-tertiary py-3">
+				<!-- New Header Row -->
+				<div class="d-flex justify-content-between align-items-center mb-3">
+				  <h2 class="mb-0">Testimonials</h2>
+				  <div class="d-flex">
+					<button class="btn me-2" id="prevTestimonial" aria-label="Previous">
+					  <i class="bi bi-arrow-left"></i>
+					</button>
+					<button class="btn" id="nextTestimonial" aria-label="Next">
+					  <i class="bi bi-arrow-right"></i>
+					</button>
+				  </div>
+				</div>
+			
+				<!-- Carousel -->
+				<div id="testimonialCarousel" class="carousel">
+				  <div class="carousel-inner">
+					<!-- Example Carousel Item -->
+					<div class="carousel-item active">
+					  <div class="card">
+						<div class="quotes display-2 text-body-tertiary">
+						  <i class="bi bi-quote"></i>
+						</div>
+						<div class="card-body">
+						  <p class="card-text">"Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus."</p>
+						  <div class="d-flex align-items-center pt-2">
+							<img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="Jane Doe">
+							<div>
+							  <h5 class="card-title fw-bold">Hellen Jummy</h5>
+							  <span class="text-secondary">Financial Counselor</span>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Additional Carousel Items -->
+					<div class="carousel-item">
+					  <div class="card">
+						<div class="quotes display-2 text-body-tertiary">
+						  <i class="bi bi-quote"></i>
+						</div>
+						<div class="card-body">
+						  <p class="card-text">"Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor."</p>
+						  <div class="d-flex align-items-center pt-2">
+							<img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" alt="June Doe">
+							<div>
+							  <h5 class="card-title fw-bold">Ralph Edwards</h5>
+							  <span class="text-secondary">Math Teacher</span>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Repeat more carousel items as needed -->
+					<div class="carousel-item">
+					  <div class="card">
+						<div class="quotes display-2 text-body-tertiary">
+						  <i class="bi bi-quote"></i>
+						</div>
+						<div class="card-body">
+						  <p class="card-text">"Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a."</p>
+						  <div class="d-flex align-items-center pt-2">
+							<img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" alt="June Doe">
+							<div>
+							  <h5 class="card-title fw-bold">Hellena John</h5>
+							  <span class="text-secondary">Psychology Student</span>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- Example Carousel Item -->
+					<div class="carousel-item">
+						<div class="card shadow-sm rounded-3">
+						  <div class="quotes display-2 text-body-tertiary">
+							<i class="bi bi-quote"></i>
+						  </div>
+						  <div class="card-body">
+							<p class="card-text">"Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi."</p>
+							<div class="d-flex align-items-center pt-2">
+							  <img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="Jane Doe">
+							  <div>
+								<h5 class="card-title fw-bold">Hellen Jummy</h5>
+								<span class="text-secondary">Financial Counselor</span>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					<!-- Additional Carousel Items -->
+					<div class="carousel-item">
+						<div class="card shadow-sm rounded-3">
+						  <div class="quotes display-2 text-body-tertiary">
+							<i class="bi bi-quote"></i>
+						  </div>
+						  <div class="card-body">
+							<p class="card-text">"Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor."</p>
+							<div class="d-flex align-items-center pt-2">
+							  <img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" alt="June Doe">
+							  <div>
+								<h5 class="card-title fw-bold">Ralph Edwards</h5>
+								<span class="text-secondary">Math Teacher</span>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			
+		</section>
+
+
+
+		<!-- <div class="testimonial bg-grey ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-headding text-center pb-50">
+							<span class="sub-title text-uppercase wow fadeInUp">Testimonial</span>
+							<h2 class="wow fadeInUp">What Our Clients Say? </h2>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInUp">
+						<div class="testimonial-slider owl-carousel">
+							<div  class="testimonial-box text-center">
+								
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">Nina Margaret</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+								<div class="d-flex">
+								<div class="testimonial-user-img">
+									<img src="images/Nina-Margaret.jpg" alt="Testimonial User">	
+								</div>
+								<h4>Hellen Jummy</h4>
+									<p>
+										Financial Counselor
+									</p>
+								</div>
+							</div>
+							<div  class="testimonial-box text-center">
+								
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">John Anderson</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+								<div class="testimonial-user-img">
+									<img src="images/John-Anderson.jpg" alt="Testimonial User">
+								</div>
+							</div>
+							<div  class="testimonial-box text-center">
+								
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">Ronald Astrone</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+								<div class="testimonial-user-img">
+									<img src="images/Ronald-Astrone.jpg" alt="Testimonial User">
+								</div>
+							</div>
+							<div  class="testimonial-box text-center">
+								
+								<div class="testimonial-content">
+									<h6 class="testimonial-title">John Anderson</h6>
+									<p class="testimonial-desc">“Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, elementum vel, cursus, elit.”</p>
+								</div>
+								<div class="testimonial-ratting">
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+								<div class="testimonial-user-img">
+									<img src="images/John-Anderson.jpg" alt="Testimonial User">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+	
+
+
+
+		<div class="container my-5">
+			<div class="row g-5 align-items-center custom-section">
+			  
+			  <!-- Left Text Section -->
+			  <div class="col-xl-6 col-lg-6 col-md-12">
+				<h2 class="fw-bold">All the cool <span class="highlighted-text">features</span></h2>
+				<p class="text-secondary">
+				  Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec malesuada nulla.
+				</p>
+				<a href="#" class="text-primary text-decoration-none">View all the features &#x2794;</a>
+			  </div>
+			  
+			  <!-- Right Design Section -->
+			  <div class="col-xl-6 col-lg-6 col-md-12 position-relative">
+				<div class="orange-shape">
+				  <!-- Card Section -->
+				   <div class="row">
+					<div class="col-xl-5 col-lg-5 col-md-12 col-xs-12">
+						
+						<div class="card border-0 mb-3 p-3 bg-white shadow-sm">
+							<h6><span class="badge bg-prime mb-2">Popular</span></h6>
+							<h6 class="card-title">Design for how people think</h6>
+							<p class="card-text text-muted">Aliquam ut euismod condimentum elementum ultricies volutpat sit non.</p>
+							<a href="#" class="btn btn-primary">Take Lesson</a>
+						  </div>
+					</div>
+					<div class="col-xl-5 col-lg-5 col-md-12 col-xs-12 mt-lg-5">
+						<img src="/images/asd.png" alt="Image 1" class="img-fluid">
+					</div>
+					<div class="col-xl-1 col-lg-1"></div>
+				</div>
+				  
+		  
+				  <!-- Grid of Images -->
+				  <div class="row g-2 image-grid">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+					  <img src="/images/Picture.png" alt="Image 1" class="img-fluid">
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+					  <img src="/images/Picture (1).png" alt="Image 2" class="img-fluid">
+					</div>
+					
+				  </div>
+		  
+				  <!-- Circular Image -->
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+		
+
+		<section class="ptb-200 bg-color">
+			<div class="container">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-12 wow fadeInLeft animated mx-auto" style="visibility: visible;">
+					<div class="text-center">
+					<h2 class="pb-4">Join a world of learning</h2>
+					<p class="text-black pb-3">
+						Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.
+Risus elit et fringilla habitant ut facilisi
+					</p>
+					<a href="menu.html" class="button wow fadeInLeft">Sign Up Now</a>
+				</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section class="faq overflow-hidden ptb-100">
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-xl-12 col-lg-12 col-md-12 wow fadeInLeft animated" style="visibility: visible;">
+						<div class="row">
+							<div class="col-xl-12 col-lg-12 col-md-12">
+								<div class="section-headding pb-50 text-center">
+									
+									<h2 class="wow fadeInUp animated" style="visibility: visible;">Answers to your <span class="highlighted-text">questions</span></h2>
+								</div>
+							</div>
+						</div>
+						<div class="faq-content">
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+								    <h2 class="accordion-header" id="headingOne">
+								      	<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Enim sodales consequat adipiscing facilisis massa venenatis, non lorem lobortis?
+								      	</button>
+								    </h2>
+								    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								      	<div class="accordion-body">
+								        	<p>Serving the interests of our clients. Personalized support and relationships matter to us. Because we are owned by banks, we are empowered to deliver top-notch support and services able to add on additional.</p>
+								      	</div>
+								    </div>
+								</div>
+								<div class="accordion-item">
+								    <h2 class="accordion-header" id="headingTwo">
+								      	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Venenatis nulla sagittis nunc, lobortis nec sollicitudin neque, dolor?
+								      	</button>
+								    </h2>
+								    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								      	<div class="accordion-body">
+								        	<p>Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. </p>
+								      	</div>
+								    </div>
+								</div>
+								<div class="accordion-item">
+								    <h2 class="accordion-header" id="headingThree">
+								      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								        What do I get when my account is paid off?
+								      </button>
+								    </h2>
+								    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								      <div class="accordion-body">
+								        <p>Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. </p>
+								      </div>
+								    </div>
+								  </div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact-section ptb-100 bg-col">
+			<div class="container">
+				<div class="row align-items-center">
+					<!-- Form Section -->
+					<div class="col-lg-6 col-md-12">
+						<h2 class="text-white">Get in Touch <img src="./images/plane-departure.png" alt=""></h2>
+						<p class="text-white">Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.</p>
+						<form>
+							<div class="mb-3">
+								<div class="d-flex">
+								<input type="radio" id="html" name="fav_language" value="HTML">
+  								<label for="html" class="text-white">User</label><br>
+								<input type="radio" id="html" name="fav_language" value="HTML">
+  								<label for="html" class="text-white">Company</label><br>		
+</div>
+							</div>
+							<div class="mb-3">
+								
+								<input type="text" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="mb-3">
+								
+								<input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="mb-3">
+								
+								<input type="text" class="form-control" id="phone" placeholder="Phone number">
+							</div>
+							<div class="mb-3">
+								
+								<select class="form-select" id="howDidYouFindUs">
+									<option selected>How did you find us?</option>
+									<option value="1">Google</option>
+									<option value="2">Friend</option>
+									<option value="3">Advertisement</option>
+								</select>
+							</div>
+							
+							<button type="submit" class="btn btn-close-white w-100 mb-2">Send</button>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="termsCheck">
+								<label class="form-check-label" for="termsCheck">I accept terms & conditions</label>
+							</div>
+						</form>
+						<p class="mt-3 text-white">
+							<strong>PHONE:</strong> 03 5422 1234 &nbsp; | &nbsp;
+							<strong>FAX:</strong> 03 5422 1234 &nbsp; | &nbsp;
+							<strong>EMAIL:</strong> info@smarc.com.au
+						</p>
+					</div>
+	
+					<!-- Map Section -->
+					<div class="col-lg-6 col-md-12 map-container">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.104523834482!2d106.81089003642343!3d-6.1906143088693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f69dbf3077c5%3A0x617afe28c3769a0f!2sKebon%20Kacang%2C%20Tanah%20Abang%2C%20Central%20Jakarta%20City%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1727781641366!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	
+	</main>
+
+	<footer class="footer wow fadeInUp">
+		<div class="container">
+			<div class="footer-inner ptb-50">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-6 order-t-4">
+						<div class="footer-box-logo">
+							<a href="index.html" class="footer-logo"><img src="images/f-logo.png" alt="Brand Logo"></a>
+							
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 order-t-4">
+						<div class="footer-box-logo">
+							<ul>
+								<li class="mb-3">Product</li>
+								<li class="mb-3">Pricing</li>
+								<li class="mb-3">Overview</li>
+								<li class="mb-3">Browse</li>
+								<li class="mb-3">Accessibility <span class="badge bg-secondary">BETA</span></li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 order-t-4">
+						<div class="footer-box-logo">
+							<ul>
+								<li class="mb-3">Product</li>
+								<li class="mb-3">Pricing</li>
+								<li class="mb-3">Overview</li>
+								<li class="mb-3">Browse</li>
+								<li class="mb-3">Accessibility</li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 order-t-4">
+						<div class="footer-box-logo">
+							<ul>
+								<li class="mb-3">Product</li>
+								<li class="mb-3">Pricing</li>
+								<li class="mb-3">Overview</li>
+								<li class="mb-3">Browse</li>
+								<li class="mb-3">Accessibility</li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 order-t-4">
+						<div class="footer-box-logo">
+							<ul>
+								<li class="mb-3">Product</li>
+								<li class="mb-3">Pricing</li>
+								<li class="mb-3">Overview</li>
+								<li class="mb-3">Browse</li>
+								<li class="mb-3">Accessibility</li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-6 order-t-4">
+						<div class="footer-box-logo">
+							<ul>
+								<li class="mb-3">Product</li>
+								<li class="mb-3">Pricing</li>
+								<li class="mb-3">Overview</li>
+								<li class="mb-3">Browse</li>
+								<li class="mb-3">Accessibility  &nbsp;&#x2794;</li>
+							</ul>
+							
+						</div>
+					</div>
+					 
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<hr>
+				<div class="row">
+					<div class="col-xl-7">
+						<p>uteachie @ 2024. All rights reserved.</p>
+					</div>
+					<div class="col-md-5 text-right text-md-left">
+						<p>
+							<a href="#" class="px-2">Terms</a>&nbsp;
+							<a href="#" class="px-2">Privacy</a>&nbsp;
+							<a href="#" class="px-2">Contact</a>&nbsp;
+							<a href="#" class="px-2"><img src="/images/Vector.png" alt="" class="px-2"> EN </a>&nbsp;
+							<a href="#" class="px-2"><img src="/images/euro.png" alt="" class="px-2"> EUR </a>&nbsp;
+							<a href="#" class="px-2"><img src="/images/accessibility.png" alt=""></a>&nbsp;
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/fancybox.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+	<script>
+		
+		document.addEventListener('DOMContentLoaded', function () {
+      const multipleItemCarousel = document.querySelector("#testimonialCarousel");
+
+      if (window.matchMedia("(min-width:576px)").matches) {
+        const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+          interval: false
+        });
+
+        const carouselInner = $(".carousel-inner");
+        const carouselItems = $(".carousel-item");
+        const cardWidth = carouselItems.width();
+        const totalItems = carouselItems.length;
+        const itemsPerSlide = window.innerWidth >= 768 ? 3 : 2;
+        const maxScrollPosition = cardWidth * (totalItems - itemsPerSlide);
+        let scrollPosition = 0;
+
+        $("#nextTestimonial").on("click", function () {
+          if (scrollPosition < maxScrollPosition) {
+            scrollPosition += cardWidth;
+            carouselInner.animate({ scrollLeft: scrollPosition }, 800);
+          }
+        });
+
+        $("#prevTestimonial").on("click", function () {
+          if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            carouselInner.animate({ scrollLeft: scrollPosition }, 800);
+          }
+        });
+      } else {
+        $(multipleItemCarousel).addClass("slide");
+       
+      }
+    });
+  
+	</script>
+	
+</body>
+</html>
