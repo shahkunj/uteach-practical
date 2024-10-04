@@ -713,7 +713,7 @@ _______________________________________________________*/
 .main-menu .menu > ul > li > a {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #6b6f72;
+  color: rgba(15, 23, 42, 1);
   text-transform: uppercase;
   padding: 37px 0px;
   display: block;
@@ -1046,7 +1046,7 @@ _______________________________________________________*/
 _______________________________________________________*/
 /*----- Banner Css -----*/
 .home-banner {
-  background: url(../images/home-banner-bg.jpg) no-repeat center/cover;
+  background: none;
   padding: 30px 0px;
   position: relative;
   height: calc(114vh - 75px);
