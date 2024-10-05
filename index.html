@@ -304,18 +304,20 @@
 						<div class="row">
 						<div class="col-xl-12 col-lg-12 col-md-12 pt-5">
 							<div class="row">
-							<div class="col-xl-4 col-lg-4 col-md-12">
+							<div class="col-xl-4 col-lg-4 col-md-12 mb-4">
 								<p>
 									Trusted by leading companies
 								</p>
 							</div>
-							<div class="col-xl-8 col-lg-8 col-md-12">
+							<div class="col-xl-8 col-lg-8 col-md-12 mb-4">
 								<div class="row text-center">
+									<div class="col-xl-1 col-lg-1 col-md-1 col-1"></div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="images/Black and White Collection 1.png" alt=""></div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="images/Black and White Collection 2.png" alt=""></div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="images/Black and White Collection 3.png" alt=""></div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="images/Black and White Collection 11.png" alt=""></div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-2"><img src="images/Black and White Collection 20.png" alt=""></div>
+								<div class="col-xl-1 col-lg-1 col-md-1 col-1"></div>
 							</div>
 							</div>
 						</div>
@@ -720,7 +722,7 @@ Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
 						  </div>
 					</div>
 					<div class="col-xl-5 col-lg-5 col-md-12 col-xs-12 mt-lg-5">
-						<img src="images/asd.png" alt="Image 1" class="img-fluid">
+						<img src="images/asd.png" alt="Image 1" class="img-fluid mb-lg-0 mb-2">
 					</div>
 					<div class="col-xl-1 col-lg-1"></div>
 				</div>
@@ -866,7 +868,7 @@ Risus elit et fringilla habitant ut facilisi
 								<label class="form-check-label" for="termsCheck">I accept terms & conditions</label>
 							</div>
 						</form>
-						<p class="mt-3 text-white">
+						<p class="mt-3 text-white mb-3">
 							<strong>PHONE:</strong> 03 5422 1234 &nbsp; | &nbsp;
 							<strong>FAX:</strong> 03 5422 1234 &nbsp; | &nbsp;
 							<strong>EMAIL:</strong> info@smarc.com.au
@@ -962,17 +964,17 @@ Risus elit et fringilla habitant ut facilisi
 			<div class="container">
 				<hr>
 				<div class="row">
-					<div class="col-xl-7">
+					<div class="col-xl-6 col-12">
 						<p>uteachie @ 2024. All rights reserved.</p>
 					</div>
-					<div class="col-md-5 text-right text-md-left">
+					<div class="col-md-6 text-right text-lg-left col-12">
 						<p>
-							<a href="#" class="px-2">Terms</a>&nbsp;
-							<a href="#" class="px-2">Privacy</a>&nbsp;
-							<a href="#" class="px-2">Contact</a>&nbsp;
-							<a href="#" class="px-2"><img src="images/Vector.png" alt="" class="px-2"> EN </a>&nbsp;
-							<a href="#" class="px-2"><img src="images/euro.png" alt="" class="px-2"> EUR </a>&nbsp;
-							<a href="#" class="px-2"><img src="images/accessibility.png" alt=""></a>&nbsp;
+							<a href="#" class="px-lg-2 px-0">Terms</a>&nbsp;
+							<a href="#" class="px-lg-2 px-0">Privacy</a>&nbsp;
+							<a href="#" class="px-lg-2 px-0">Contact</a>&nbsp;
+							<a href="#" class="px-lg-2 px-0"><img src="images/Vector.png" alt="" class="px-2"> EN </a>&nbsp;
+							<a href="#" class="px-lg-2 px-0"><img src="images/euro.png" alt="" class="px-2"> EUR </a>&nbsp;
+							<a href="#" class="px-lg-2 px-0"><img src="images/accessibility.png" alt=""></a>&nbsp;
 						</p>
 					</div>
 				</div>
@@ -988,43 +990,85 @@ Risus elit et fringilla habitant ut facilisi
 	<script src="js/custom.js"></script>
 	
 	<script>
-		
-		document.addEventListener('DOMContentLoaded', function () {
-      const multipleItemCarousel = document.querySelector("#testimonialCarousel");
+		   document.addEventListener('DOMContentLoaded', function () {
+  const multipleItemCarousel = document.querySelector("#testimonialCarousel");
+  const prevButton = document.getElementById('prevTestimonial');
+  const nextButton = document.getElementById('nextTestimonial');
 
-      if (window.matchMedia("(min-width:576px)").matches) {
-        const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-          interval: false
-        });
+  // Function to handle desktop (multiple items)
+  function initializeDesktopCarousel() {
+    const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+      interval: false,
+      wrap: false
+    });
 
-        const carouselInner = $(".carousel-inner");
-        const carouselItems = $(".carousel-item");
-        const cardWidth = carouselItems.width();
-        const totalItems = carouselItems.length;
-        const itemsPerSlide = window.innerWidth >= 768 ? 3 : 2;
-        const maxScrollPosition = cardWidth * (totalItems - itemsPerSlide);
-        let scrollPosition = 0;
+    const carouselInner = $(".carousel-inner");
+    const carouselItems = $(".carousel-item");
+    const cardWidth = carouselItems.width();
+    const totalItems = carouselItems.length;
+    const itemsPerSlide = window.innerWidth >= 768 ? 3 : 2;
+    const maxScrollPosition = cardWidth * (totalItems - itemsPerSlide);
+    let scrollPosition = 0;
 
-        $("#nextTestimonial").on("click", function () {
-          if (scrollPosition < maxScrollPosition) {
-            scrollPosition += cardWidth;
-            carouselInner.animate({ scrollLeft: scrollPosition }, 800);
-          }
-        });
-
-        $("#prevTestimonial").on("click", function () {
-          if (scrollPosition > 0) {
-            scrollPosition -= cardWidth;
-            carouselInner.animate({ scrollLeft: scrollPosition }, 800);
-          }
-        });
-      } else {
-        $(multipleItemCarousel).addClass("slide");
-       
+    $("#nextTestimonial").off('click').on("click", function () {
+      if (scrollPosition < maxScrollPosition) {
+        scrollPosition += cardWidth;
+        carouselInner.animate({ scrollLeft: scrollPosition }, 800);
       }
     });
-  
-	</script>
+
+    $("#prevTestimonial").off('click').on("click", function () {
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+        carouselInner.animate({ scrollLeft: scrollPosition }, 800);
+      }
+    });
+  }
+
+  // Function to handle mobile (single item)
+  function initializeMobileCarousel() {
+    // Remove any existing Bootstrap Carousel instance to prevent conflicts
+    const carouselInstance = bootstrap.Carousel.getInstance(multipleItemCarousel);
+    if (carouselInstance) {
+      carouselInstance.dispose();
+    }
+
+    // Initialize Bootstrap Carousel for mobile
+    const mobileCarousel = new bootstrap.Carousel(multipleItemCarousel, {
+      interval: false,
+      wrap: false
+    });
+
+    // Attach event listeners to navigation buttons
+    $("#nextTestimonial").off('click').on("click", function () {
+      mobileCarousel.next();
+    });
+
+    $("#prevTestimonial").off('click').on("click", function () {
+      mobileCarousel.prev();
+    });
+  }
+
+  // Function to determine and initialize the appropriate carousel
+  function initializeCarouselBasedOnWidth() {
+    if (window.matchMedia("(min-width:576px)").matches) {
+      // Desktop View
+      initializeDesktopCarousel();
+    } else {
+      // Mobile View
+      initializeMobileCarousel();
+    }
+  }
+
+  // Initialize carousel on page load
+  initializeCarouselBasedOnWidth();
+
+  // Re-initialize carousel on window resize (optional)
+  window.addEventListener('resize', function () {
+    initializeCarouselBasedOnWidth();
+  });
+});
+	  </script>
 	
 </body>
 </html>
