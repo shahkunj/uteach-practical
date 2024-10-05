@@ -132,7 +132,7 @@ a, button, .transition, .form-control {
 .bg-col {
   background-image: url('/images/bg-2.png');
  background-repeat: no-repeat;
- background-size: 107%;
+ background-size: 110%;
 }
 .fancybox-thumbs {
   top: auto;
@@ -3450,7 +3450,6 @@ _______________________________________________________*/
 }
 
 .copyright a {
-  text-decoration: underline;
   color: #ffffff;
 }
 
@@ -4647,6 +4646,15 @@ display: none;
     text-align: left;
     padding-top: 20px;
   }
+  input[type="radio"] {
+    margin-right: 5px;
+}
+.text-lg-left{
+  text-align: left;
+}
+.mb-2{
+  margin-bottom:20px;
+}
 }
 
 @media (max-width: 480px) {
@@ -8002,4 +8010,11 @@ input[type="radio"] {
 input[type="radio"]:checked + .radio-mark {
   background-color: white;
   border: 2px solid rgb(255, 255, 255);
+}
+.text-right{
+  text-align: right;
+}
+
+.mb-lg-2{
+  margin-bottom:0px;
 }
