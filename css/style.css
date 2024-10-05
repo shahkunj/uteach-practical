@@ -4111,6 +4111,10 @@ display: none;
     font-size: 32px;
     line-height: 42px;
   }
+  h1 .highlighted-text{
+    font-size: 32px;
+    line-height: 42px;
+  }
   h2 {
     font-size: 28px;
   }
@@ -4654,6 +4658,9 @@ display: none;
 }
 .mb-2{
   margin-bottom:20px;
+}
+.highlighted-text::after{
+  top:31px;
 }
 }
 
@@ -7961,7 +7968,7 @@ display: none;
   color: white;
 }
 .btn-close-white:hover{
-  color:white;
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -8020,4 +8027,22 @@ input[type="radio"]:checked + .radio-mark {
 }
 .copyright a:hover{
   color: #fb923c;
+}
+.highlighted-text {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem; 
+  font-weight: bold;
+}
+
+.highlighted-text::after {
+  content: '';
+  position: absolute;
+  width: 156px;
+  height: 21px;
+  background-image: url('/images/Vector 14.png');
+  left: 0;
+  bottom: 0;
+  transform: translateY(5px);
+  font-weight: 800;
 }
